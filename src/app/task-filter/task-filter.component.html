@@ -1,0 +1,12 @@
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">Filtrar Tareas</h5>
+    <div class="form-group">
+      <select class="form-control" (change)="onFilterChange($event)">
+        <option value="All">Todas las tareas</option>
+        <option value="Completed">Tareas Completadas</option>
+        <option value="Incomplete">Tareas Incompletas</option>
+      </select>
+    </div>
+  </div>
+</div>

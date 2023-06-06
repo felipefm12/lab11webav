@@ -1,0 +1,13 @@
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">Lista de Tareas</h5>
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let task of tasks">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" [(ngModel)]="task.completed" (change)="updateTaskStatus(task)">
+          <label class="form-check-label" [class.completed]="task.completed">{{ task.name }}</label>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
